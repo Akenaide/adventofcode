@@ -44,3 +44,9 @@ def test_not_possible_1():
         "blue": 14,
     }
     assert not day_two.is_possible(config, entry)
+
+
+def test_multiply():
+    entry = "Game 1: 3 blue, 4 red; 1 red, 2 green, 6 blue; 2 green"
+
+    assert day_two.get_power(entry) == 48
